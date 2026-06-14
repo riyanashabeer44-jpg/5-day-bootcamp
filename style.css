@@ -1,8 +1,9 @@
-
-      h2{
-         color: blueviolet;
+h2{
+         color: crimson;
+         background-color: lavenderblush;
          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
          font-size: 35px;
+         text-align: center;
       }
       .myclass{
          color: rgb(36, 93, 93);
@@ -16,15 +17,16 @@
         font-size: 20px;
       }
       .about{
-        background-color: black;
+        background-color: darkcyan;
         display: grid;
         grid-template-columns: 1fr 2fr;
-        margin: 10px;
+        margin: 5px;
         padding: 100px;
       }
       .sec{
         color: brown;
         font-size: 20px;
+        text-align: center;
       }
       .left{
         text-align: left;
@@ -34,8 +36,9 @@
       }
       .middle{
         text-align: center;
-        background-color: black;
-        margin: 10px;
+        background-color: darkcyan;
+        margin: 5px;
         padding: 50px;
       }
+      
       
