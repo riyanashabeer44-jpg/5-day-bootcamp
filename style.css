@@ -1,0 +1,41 @@
+
+      h2{
+         color: blueviolet;
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         font-size: 35px;
+      }
+      .myclass{
+         color: rgb(36, 93, 93);
+         text-align: center;
+      }
+      #myid{
+         color: cornflowerblue;
+         font-size: 35px;
+      }
+      #para{
+        font-size: 20px;
+      }
+      .about{
+        background-color: black;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin: 10px;
+        padding: 100px;
+      }
+      .sec{
+        color: brown;
+        font-size: 20px;
+      }
+      .left{
+        text-align: left;
+      }
+      .right{
+        text-align: right;
+      }
+      .middle{
+        text-align: center;
+        background-color: black;
+        margin: 10px;
+        padding: 50px;
+      }
+      
