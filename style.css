@@ -1,17 +1,14 @@
 h2{
          color: crimson;
-         background-color: lavenderblush;
+         background-color: darkcyan;
          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
          font-size: 35px;
          text-align: center;
       }
-      .myclass{
-         color: rgb(36, 93, 93);
-         text-align: center;
-      }
       #myid{
-         color: cornflowerblue;
+         color: crimson;
          font-size: 35px;
+         justify-content: flex-end;
       }
       #para{
         font-size: 20px;
@@ -38,7 +35,75 @@ h2{
         text-align: center;
         background-color:  rgb(112, 174, 174);
         margin: 5px;
-        padding: 50px;
+        padding: 100px;
       }
-      
-      
+      nav ul{
+        display: flex;
+        gap: 50px;
+        justify-content: right;
+      }
+      a{
+        text-decoration: none;
+        color: black;
+        justify-content: space-around;
+        justify-content: space-between;
+      }
+      .sectionid{
+        display: grid;
+        text-align: center;
+        background-color:  rgb(112, 174, 174);
+        justify-content: center;
+        margin: 5px;
+        padding: 100px;
+      }
+      .menu-toggle{
+        display: block;
+        font-size: 30px;
+        cursor:pointer;
+      }
+      @media screen and (min-width:768px){
+    body{
+      background-color: darksalmon;
+    }
+
+    nav{
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    nav ul{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        gap:15px;
+    }
+
+    nav ul.show{
+        display:flex;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .right{
+        text-align:center;
+    }
+}
+#menu.show{
+  display:flex;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.media-toggle{
+  display: block;
+}
+h1{
+  text-align: center;
+}
