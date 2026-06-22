@@ -6,12 +6,28 @@
    <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: bisque;">
-   <h1 class="myclass" id="myid">My Portfolio</h1>
-   <p class="myclass" id="para">Welcome to my portifolio page.I'm a beginner web developer learning HTML</p>
-   <section class="about">
+   <header>
+      <nav style="background-color: rgb(112, 174, 174);">
+         <h1 id="myid">Portfolio</h1>
+         <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+         <ul type="none" id="menu">
+            
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+         
+      </nav>
+   </header>
+   
+   <section class="about" id="home">
       <div class="left">
    <h2 style="background-color: darkcyan;">Riyana Shabeer</h2>
-   <p class="sec">I'm a Cyber Forensic student</p>
+   <p id="para">Welcome to my portifolio page.I'm a beginner web developer learning HTML</p>
       </div>
       <div class="right">
    <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx2gIJxXNyc5I9dLgHQHw4_4vyennNWymeSIl7sRlJmg&s=10 width="350" height="350">
@@ -19,31 +35,55 @@
    <br>
       </div>
    </section>
-   <section class="middle">
+   <section class="middle" id="about">
    <h2 style="background-color: darkcyan;">About me</h2>
    <br>
    <p class="sec">Hello! I build simple web pages using basic HTML tags, including lists and forms.</p>
    </section>
+   <section class="sectionid" id="projects">
    <h2>Projects</h2>
-   <ul type="disc">
+   <ul type="none">
       <li>Personal Portfolio</li>
       <li>Simple Landing Page</li>
       <li>Contact Form Example</li>
    </ul>
+   </section>
+   <section class="sectionid" id="skills">
    <h2>Skills</h2>
-   <ol type="1">
+   <ol type="none">
       <li>HTML</li>
       <li>CSS basics</li>
       <li>JavaScript basics</li>
    </ol>
+   </section>
+   <section class="sectionid" id="contact">
    <h2>Contact</h2>
-   <form>
-      Name:<br><input type="text"><br><br>
-      Email:<br><input type="email"><br>
+   <form onsubmit="showDetails(event)">
+      Name:<br> 
+      <input type="text" id="name" required>
+      <br><br>
+      Email:<br>
+      <input type="email" id="email" required>
+      <br>
       <br>
       <input type="submit" name="Send message" value="Send message"/>
 
    </form>
+   </section>
+   <script>
+      function toggleMenu(){
+         document.getElementById("menu").classList.toggle("show");
+      }
+      function showDetails(event){
+         let name = document.getElementById("name").value;
+         let email = document.getElementById("email").value;
+         alert(
+            "Submitted Details\n\n" +
+            "Name: " + name +
+            "\nEmail: " + email
+         );
+      }
+   </script>
 </body>
 
 </html>
